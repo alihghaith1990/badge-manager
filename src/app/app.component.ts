@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AuthService } from './services/auth.Service';
+import { LoginComponent } from "./components/login/login.component";
+import { ExhibitorsListComponent } from "./components/exhibitors-list/exhibitors-list.component";
 
 @Component({
   selector: 'app-root',
@@ -11,9 +13,9 @@ import { AuthService } from './services/auth.Service';
     CommonModule,
     MatToolbarModule,
     MatButtonModule,
-    // ExhibitorsListComponent,
-    // LoginComponent
-  ],
+    LoginComponent,
+    ExhibitorsListComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

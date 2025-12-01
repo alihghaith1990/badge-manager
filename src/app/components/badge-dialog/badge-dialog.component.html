@@ -1,0 +1,44 @@
+<h2 mat-dialog-title>Badges - {{ exhibitor?.companyname }}</h2>
+<mat-dialog-content class="space-y-4">
+    <div class="relative">
+        <app-overlay-loader [loading]="loader.isLoading()"></app-overlay-loader>
+        <div *ngIf="mode === 'list'">
+            <div class="flex justify-between items-center">
+                <div>Existing badges: {{ badges.length }}</div>
+                <div>
+                    <button mat-flat-button color="primary" (click)="mode='create'">+ Add</button>
+                </div>
+            </div>
+
+            <mat-list>
+                <mat-list-item *ngFor="let b of badges">
+                    <div mat-line>{{ b.firstname }} {{ b.lastname }} <span class="text-sm text-gray-500">— {{ b.position }}</span></div>
+                    <div class="ml-auto flex gap-2">
+                        <button mat-icon-button (click)="print(b)"><mat-icon>print</mat-icon></button>
+                        <button mat-icon-button (click)="startEdit(b)"><mat-icon>edit</mat-icon></button>
+                        <button mat-icon-button color="warn" (click)="remove(b)"><mat-icon>delete</mat-icon></button>
+                    </div>
+                </mat-list-item>
+            </mat-list>
+        </div>
+
+        <div *ngIf="mode === 'create'">
+            <form class="grid gap-2">
+                <mat-form-field><input matInput placeholder="First name" [(ngModel)]="form.firstname" name="fn" /></mat-form-field>
+                <mat-form-field><input matInput placeholder="Last name" [(ngModel)]="form.lastname" name="ln" /></mat-form-field>
+                <mat-form-field><input matInput placeholder="Position" [(ngModel)]="form.position" name="pos" /></mat-form-field>
+                <mat-form-field><input matInput placeholder="Email" [(ngModel)]="form.email" name="email" /></mat-form-field>
+                <mat-form-field><input matInput placeholder="Phone" [(ngModel)]="form.phone" name="phone" /></mat-form-field>
+
+                <div class="flex gap-2 justify-end mt-2">
+                    <button mat-flat-button color="primary" (click)="submit()">{{ editing ? 'Save' : 'Create' }}</button>
+                    <button mat-button (click)="cancel()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-button (click)="close()">Close</button>
+</mat-dialog-actions>

@@ -12,9 +12,9 @@
 
 <main class="p-4">
     <ng-container *ngIf="auth.isLoggedIn(); else showLogin">
-        <!-- <app-exhibitors-list></app-exhibitors-list> -->
+        <app-exhibitors-list></app-exhibitors-list>
     </ng-container>
     <ng-template #showLogin>
-        <!-- <app-login></app-login> -->
+        <app-login></app-login>
     </ng-template>
 </main>

@@ -1,5 +1,5 @@
 export interface ExtraBadge {
-    id: number;
+    id: string;
     firstname: string;
     lastname: string;
     position?: string;
@@ -10,7 +10,8 @@ export interface ExtraBadge {
 }
 
 export interface Exhibitor {
-    id: number;
+    id: string;
+    mshowid: string;
     companyname: string;
     firstname?: string;
     lastname?: string;
@@ -21,4 +22,5 @@ export interface Exhibitor {
     space?: string; // note: original JSON has space as string
     email?: string;
     extrabadges?: ExtraBadge[];
+    max?: number;
 }

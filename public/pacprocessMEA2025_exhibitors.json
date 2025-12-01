@@ -1,5 +1,6 @@
 [
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85888",
         "loginid": "world4008",
         "companyname": "World Packaging Organisation (WPO)",
@@ -35,6 +36,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85889",
         "loginid": "jiang5112",
         "companyname": "Jiangxi Yongguan Technology Development Co., Ltd.",
@@ -80,6 +82,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85890",
         "loginid": "tianj5452",
         "companyname": "Tianjin Sure International Trading Co., Ltd",
@@ -115,6 +118,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85891",
         "loginid": "jiang5743",
         "companyname": "Jiangsu Bocheng New Tech Materials Co., Ltd.",
@@ -180,6 +184,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85892",
         "loginid": "guang1334",
         "companyname": "Guangdong Zhongxing Plastic and Paper Printing Co., Ltd",
@@ -225,6 +230,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85893",
         "loginid": "zheji2338",
         "companyname": "Zhejiang Zhongcheng Packaging Material Co., Ltd",
@@ -280,6 +286,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85894",
         "loginid": "jinan2546",
         "companyname": "Jinan Sunward Machinery Co., Ltd",
@@ -335,6 +342,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85895",
         "loginid": "shang3347",
         "companyname": "Shanghai Kuihong Machinery Manufacture Co., Ltd.",
@@ -390,6 +398,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85896",
         "loginid": "zheji4250",
         "companyname": "Zhejiang Funuoda Intelligent Equipment Co., Ltd.",
@@ -445,6 +454,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85897",
         "loginid": "ecopa4605",
         "companyname": "Ecopack S.p.A.",
@@ -480,6 +490,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85898",
         "loginid": "newpl5450",
         "companyname": "New Plast s.r.l.",
@@ -515,6 +526,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85900",
         "loginid": "gpcpa5815",
         "companyname": "GPC Papier et Carton",
@@ -570,6 +582,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85901",
         "loginid": "hsiao0343",
         "companyname": "Hsiao Sung Non-Oxygen Chemical Co., Ltd.",
@@ -601,10 +614,21 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382462",
+                "firstname": "Angel",
+                "lastname": "Yu",
+                "position": "Assistant To The Vice President",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85902",
         "loginid": "cmara0839",
         "companyname": "Cámara Oficial de Comercio, Industria, Servicios y Navegación",
@@ -619,6 +643,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85903",
         "loginid": "alizd1624",
         "companyname": "Al Izdehar for Plastic & Carton Ind.",
@@ -664,6 +689,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85904",
         "loginid": "think2046",
         "companyname": "Think Laboratory Co., Ltd.",
@@ -678,6 +704,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85905",
         "loginid": "henan4710",
         "companyname": "Henan Taihe Packaging Co., Ltd",
@@ -743,6 +770,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85906",
         "loginid": "sumpo5016",
         "companyname": "SUMPOT Retort",
@@ -794,10 +822,21 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382466",
+                "firstname": "shijuan",
+                "lastname": "bao",
+                "position": "Exhibition Director",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85907",
         "loginid": "actot5702",
         "companyname": "Acto Trade",
@@ -1013,6 +1052,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85908",
         "loginid": "elala0205",
         "companyname": "El Alamein Pack for Printing & Packaging",
@@ -1108,6 +1148,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85909",
         "loginid": "bella0419",
         "companyname": "Bella Pack",
@@ -1118,7 +1159,7 @@
         "standnumber": "Hall 1 \/ E4",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "120",
-        "email": "amany@bellapacktec.com",
+        "email": "info@bellapacktec.com",
         "extrabadges": [
             {
                 "id": "378235",
@@ -1323,6 +1364,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85910",
         "loginid": "engin0844",
         "companyname": "Engineering Co. for Food Industries Equipment",
@@ -1398,6 +1440,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85911",
         "loginid": "globa1312",
         "companyname": "Global Coding Technology",
@@ -1453,7 +1496,7 @@
             {
                 "id": "376224",
                 "firstname": "Mariam",
-                "lastname": "Tarek Assal",
+                "lastname": "Assal",
                 "position": "Sales Department",
                 "email": null,
                 "phone": null,
@@ -1503,6 +1546,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85912",
         "loginid": "hirol2253",
         "companyname": "HiRoll Technology",
@@ -1598,6 +1642,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85913",
         "loginid": "integ3047",
         "companyname": "Integrated Engineering Group",
@@ -1633,6 +1678,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85914",
         "loginid": "mpsau5356",
         "companyname": "MPS Automazioni Middle East",
@@ -1728,6 +1774,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85915",
         "loginid": "metag5824",
         "companyname": "Reefcap-Tecnocap",
@@ -1803,6 +1850,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85916",
         "loginid": "sahar0116",
         "companyname": "SAHARA Printing Company",
@@ -1878,6 +1926,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85917",
         "loginid": "tower0433",
         "companyname": "Tower Plast",
@@ -2093,6 +2142,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85918",
         "loginid": "inter0827",
         "companyname": "International Engineering Union for Polymer Industry",
@@ -2288,6 +2338,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85919",
         "loginid": "snack2415",
         "companyname": "Snack Solutions",
@@ -2423,6 +2474,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85920",
         "loginid": "elsew2717",
         "companyname": "El Sewedy Printhouse",
@@ -2559,7 +2611,7 @@
                 "id": "381588",
                 "firstname": "Menna",
                 "lastname": "Mohamed",
-                "position": "Student At Meat School",
+                "position": "Student At Medhat El Seweedy School",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -2569,7 +2621,7 @@
                 "id": "381589",
                 "firstname": "Malak",
                 "lastname": "Ali",
-                "position": "Student At Meat School",
+                "position": "Student At Medhat El Seweedy School",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -2579,7 +2631,7 @@
                 "id": "381590",
                 "firstname": "Basmala",
                 "lastname": "Ramadan",
-                "position": "Student At Meat School",
+                "position": "Student At Medhat El Seweedy School",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -2589,7 +2641,7 @@
                 "id": "381591",
                 "firstname": "Ziad",
                 "lastname": "Saeed",
-                "position": "Student At Meat School",
+                "position": "Student At Medhat El Seweedy School",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -2609,7 +2661,7 @@
                 "id": "382032",
                 "firstname": "Basmala",
                 "lastname": "Mahmoud",
-                "position": "Student At Meat School",
+                "position": "Student At Medhat El Seweedy School",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -2619,7 +2671,417 @@
                 "id": "382035",
                 "firstname": "Ahmed",
                 "lastname": "Sayed Hussein",
-                "position": "Student At Meat School",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382145",
+                "firstname": "Mr Antonuo",
+                "lastname": "Nagy Zaky",
+                "position": "Academic Manger Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382146",
+                "firstname": "Dr Iman",
+                "lastname": "Khalil Ibrahim",
+                "position": "Academic Supervisor",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382147",
+                "firstname": "Mr Salah",
+                "lastname": "Mohamed Youssef",
+                "position": "Academic Manger Medhat El Seweedy School 2",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382148",
+                "firstname": "Mr Mohamed",
+                "lastname": "Ahmed Nabil",
+                "position": "Practical Supervisor",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382149",
+                "firstname": "Ahmed",
+                "lastname": "Tamer",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382150",
+                "firstname": "Khaled",
+                "lastname": "Khairy",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382151",
+                "firstname": "Mahmoud",
+                "lastname": "Hamada",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382152",
+                "firstname": "Youseef",
+                "lastname": "Mohamed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382153",
+                "firstname": "Basmala",
+                "lastname": "Hany",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382154",
+                "firstname": "Ahmed",
+                "lastname": "Samir",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382155",
+                "firstname": "Ahmed",
+                "lastname": "Saber",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382156",
+                "firstname": "Ahmed",
+                "lastname": "Wael",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382157",
+                "firstname": "Ahmed",
+                "lastname": "Waled",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382158",
+                "firstname": "Adham",
+                "lastname": "Mohamed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382159",
+                "firstname": "Basem",
+                "lastname": "Amer",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382160",
+                "firstname": "Hassan",
+                "lastname": "Ramadan",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382161",
+                "firstname": "Ziad",
+                "lastname": "Mahmoud",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382162",
+                "firstname": "Abdallah",
+                "lastname": "Ahmed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382163",
+                "firstname": "Abdallah",
+                "lastname": "Gaber",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382164",
+                "firstname": "Amr",
+                "lastname": "Mohamed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382165",
+                "firstname": "Mohamed",
+                "lastname": "Ahmed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382166",
+                "firstname": "Mohamed",
+                "lastname": "Khalid",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382167",
+                "firstname": "Mohamed",
+                "lastname": "Abdelhady",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382168",
+                "firstname": "Mohanad",
+                "lastname": "Amr",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382169",
+                "firstname": "Yaser",
+                "lastname": "Adel",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382170",
+                "firstname": "Yousef",
+                "lastname": "Ahmed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382171",
+                "firstname": "Yousef",
+                "lastname": "Walid",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382172",
+                "firstname": "Ahmed",
+                "lastname": "Reda",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382173",
+                "firstname": "Osama",
+                "lastname": "Mohamed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382174",
+                "firstname": "Ziad",
+                "lastname": "Reda",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382175",
+                "firstname": "Amr",
+                "lastname": "Mohamed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382176",
+                "firstname": "Mostafa",
+                "lastname": "Ismael",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382177",
+                "firstname": "Yousef",
+                "lastname": "Ayman",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382178",
+                "firstname": "Asmaa",
+                "lastname": "Ahmed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382179",
+                "firstname": "Habiba",
+                "lastname": "Gharib",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382180",
+                "firstname": "Ali",
+                "lastname": "Ayman",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382181",
+                "firstname": "Yousif",
+                "lastname": "Ahmed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382182",
+                "firstname": "Salma",
+                "lastname": "Ragab",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382183",
+                "firstname": "Malak",
+                "lastname": "Ibrahim",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382184",
+                "firstname": "Hana",
+                "lastname": "Ahmed",
+                "position": "Student At Medhat El Seweedy School",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382185",
+                "firstname": "Hoda",
+                "lastname": "Karim",
+                "position": "Student At Medhat El Seweedy School",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -2628,6 +3090,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85921",
         "loginid": "track2916",
         "companyname": "Track International Trade",
@@ -2983,6 +3446,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85922",
         "loginid": "egyro3208",
         "companyname": "Egyroll for Production Lines",
@@ -3068,6 +3532,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85923",
         "loginid": "kefac3416",
         "companyname": "KEFAC",
@@ -3093,6 +3558,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85924",
         "loginid": "rabon3615",
         "companyname": "Rabboni Plast",
@@ -3118,6 +3584,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85925",
         "loginid": "jokey3826",
         "companyname": "Jokey",
@@ -3273,6 +3740,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85926",
         "loginid": "cubii4444",
         "companyname": "CUBII Industrial Solutions",
@@ -3488,6 +3956,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85927",
         "loginid": "cairo4651",
         "companyname": "Atta Makina",
@@ -3499,15 +3968,57 @@
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "24",
         "email": "Ahmed.mr4616@gmail.com",
-        "extrabadges": []
+        "extrabadges": [
+            {
+                "id": "382192",
+                "firstname": "Mohamed",
+                "lastname": "Harfoush",
+                "position": "Atta Makina Sales Executive",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382194",
+                "firstname": "Murat",
+                "lastname": "Kayabas",
+                "position": "GunMak Managing Director",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382195",
+                "firstname": "Ali",
+                "lastname": "Kayabas",
+                "position": "Marketing Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382196",
+                "firstname": "Orhan",
+                "lastname": "Ozdemir",
+                "position": "Operation Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            }
+        ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85928",
         "loginid": "delta4858",
         "companyname": "Delta Engineering Systems",
         "firstname": "Shaimaa",
         "lastname": "Fathy",
-        "position": "Sales Director Vp Assistant",
+        "position": "Sales Director VP Assistant",
         "country": "Egypt",
         "standnumber": "Hall 1 \/ F52",
         "spacetype": "Inside space only ( Inside Hall)",
@@ -3667,6 +4178,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85929",
         "loginid": "unite5121",
         "companyname": "United for Advanced Supplies",
@@ -3852,6 +4364,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85930",
         "loginid": "alsha5420",
         "companyname": "Al Shaheen Cans",
@@ -3987,6 +4500,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85931",
         "loginid": "ricem5800",
         "companyname": "Rice Mart",
@@ -4001,6 +4515,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85934",
         "loginid": "retai3042",
         "companyname": "Retail Tec",
@@ -4186,6 +4701,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85935",
         "loginid": "ready3249",
         "companyname": "Ready Pack Technology",
@@ -4291,6 +4807,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85936",
         "loginid": "delta3722",
         "companyname": "Delta for Production",
@@ -4412,10 +4929,21 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382242",
+                "firstname": "Duan",
+                "lastname": "Yangyang",
+                "position": "Developer Engineer",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85937",
         "loginid": "unive3855",
         "companyname": "United Investment For Food Products (Uni Food)",
@@ -4571,6 +5099,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85938",
         "loginid": "gopac4017",
         "companyname": "Go Pack",
@@ -4676,6 +5205,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85939",
         "loginid": "royal4157",
         "companyname": "Royal Star for Plast",
@@ -4741,6 +5271,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85940",
         "loginid": "eghan4401",
         "companyname": "EG HAND",
@@ -4796,12 +5327,13 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85941",
         "loginid": "easyp4602",
         "companyname": "Easy Pack",
         "firstname": "Ahmed",
         "lastname": "Othman",
-        "position": "Ceo",
+        "position": "CEO",
         "country": "Egypt",
         "standnumber": "Hall 1 \/ D22",
         "spacetype": "Inside space only ( Inside Hall)",
@@ -4941,6 +5473,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85942",
         "loginid": "hi-te4834",
         "companyname": "Hi-Tek Engineering",
@@ -5026,6 +5559,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85943",
         "loginid": "craft5029",
         "companyname": "Craft Print House",
@@ -5127,20 +5661,11 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
-            },
-            {
-                "id": "378433",
-                "firstname": "karen",
-                "lastname": "atef",
-                "position": "sales",
-                "email": null,
-                "phone": null,
-                "mobile": null,
-                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85944",
         "loginid": "moder5344",
         "companyname": "CAP PET",
@@ -5306,6 +5831,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85945",
         "loginid": "black5529",
         "companyname": "Black and Romans",
@@ -5491,6 +6017,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85946",
         "loginid": "super5717",
         "companyname": "Super Pack For Manufacturing Packing Machinery",
@@ -5556,6 +6083,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85947",
         "loginid": "sanam5911",
         "companyname": "Sanam Engineering Industries",
@@ -5681,6 +6209,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85948",
         "loginid": "indus0040",
         "companyname": "Industrial Service Center",
@@ -5916,6 +6445,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85949",
         "loginid": "carto0220",
         "companyname": "CartoPack",
@@ -5961,6 +6491,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85950",
         "loginid": "dwa0410",
         "companyname": "DWA",
@@ -6106,6 +6637,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85951",
         "loginid": "alsak0557",
         "companyname": "Al Sakr",
@@ -6201,6 +6733,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85952",
         "loginid": "eisac0827",
         "companyname": "EISAC Automation",
@@ -6226,6 +6759,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85953",
         "loginid": "futur1011",
         "companyname": "Future Technology",
@@ -6251,8 +6785,8 @@
             {
                 "id": "381964",
                 "firstname": "Tarek",
-                "lastname": "Mohamed",
-                "position": "Public relations manager",
+                "lastname": "Tarek",
+                "position": "Import Coordinator",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -6277,10 +6811,41 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382063",
+                "firstname": "Gouda",
+                "lastname": "Hamdy",
+                "position": "technician",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382064",
+                "firstname": "Abdelhamid",
+                "lastname": "Hamouda",
+                "position": "technician",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382189",
+                "firstname": "Tarek",
+                "lastname": "Galal",
+                "position": "Engineer",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85955",
         "loginid": "tanit0030",
         "companyname": "TANIS SEED PROCESSING TECH.",
@@ -6316,6 +6881,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85956",
         "loginid": "turco0232",
         "companyname": "TURCOMAC MÜHENDISLIK MAKINA ITH. IHR. SAN. VE TIC. LTD. STI.",
@@ -6361,6 +6927,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85957",
         "loginid": "pamuk0404",
         "companyname": "PAMUKKALE KURUYEMIS MAKINALARI SAN. VE TIC. LTD. STI.",
@@ -6375,6 +6942,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85958",
         "loginid": "desmh1030",
         "companyname": "DES MÜHENDISLIK MAKINE ITH IHR. SAN. VE TIC. LTD. STI.",
@@ -6389,20 +6957,63 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85960",
         "loginid": "konya1432",
         "companyname": "KONYA TIFTURUK KAGIT BASKI SANAYI VE TICARET A.S.",
-        "firstname": "NASRUDIN",
-        "lastname": "MAHAMOUD MUSE",
-        "position": "",
+        "firstname": "Mehmet",
+        "lastname": "Erik",
+        "position": "Chief Executive Officer",
         "country": "Türkiye",
         "standnumber": "Hall 1 \/ B34",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "24",
-        "email": "konyatifdruk@hotmail.com",
-        "extrabadges": []
+        "email": "export@konyatifdruk.com",
+        "extrabadges": [
+            {
+                "id": "382089",
+                "firstname": "Mehmet",
+                "lastname": "Erik",
+                "position": "Chief Executive Officer",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382090",
+                "firstname": "Fatih",
+                "lastname": "Erik",
+                "position": "Chief Operating Officer",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382091",
+                "firstname": "Nasrudin",
+                "lastname": "Muse",
+                "position": "Export Sales Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382092",
+                "firstname": "İlhami",
+                "lastname": "Tekin",
+                "position": "Designer",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            }
+        ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85961",
         "loginid": "atara1525",
         "companyname": "ATARA MAKINE OTOMASYON SAN. VE TIC. LTD. STI.",
@@ -6448,6 +7059,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85962",
         "loginid": "ouzha1653",
         "companyname": "OGUZHAN TÖMEK GIDA MAKINALARI SAN. VE TIC. LTD. STI.",
@@ -6462,6 +7074,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85964",
         "loginid": "bsmak1910",
         "companyname": "BISMAK VURAL MAKINA GIDA HAYV. VE TIC. LTD. STI.",
@@ -6507,6 +7120,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85966",
         "loginid": "yenka2108",
         "companyname": "YENKAL MAKINA SANAYI TICARET A.S.",
@@ -6521,6 +7135,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85967",
         "loginid": "evval2217",
         "companyname": "SEVVAL KURUYEMIS MAKINELERI GIDA SAN. TIC. LTD. STI.",
@@ -6596,6 +7211,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85968",
         "loginid": "packp2937",
         "companyname": "PACKPLUS PACKAGING TECHNOLOGIES",
@@ -6621,6 +7237,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85970",
         "loginid": "eszpa3739",
         "companyname": "ESZIP AMBALAJ A.S.",
@@ -6635,6 +7252,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85978",
         "loginid": "dongg2913",
         "companyname": "Dongguan High Faith Paper Co., Ltd",
@@ -6670,6 +7288,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85979",
         "loginid": "taizh4008",
         "companyname": "Taizhou Weide Packaging Co., Ltd",
@@ -6705,6 +7324,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85980",
         "loginid": "qingd4341",
         "companyname": "Qingdao Luobo Machinery Co., Ltd",
@@ -6740,12 +7360,13 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85981",
         "loginid": "amana2358",
         "companyname": "AMANA PLAST for industry and trade",
         "firstname": "Emad",
         "lastname": "Nady",
-        "position": "Ceo",
+        "position": "CEO",
         "country": "Egypt",
         "standnumber": "Hall 1 \/ B64",
         "spacetype": "Inside space only ( Inside Hall)",
@@ -6875,6 +7496,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85982",
         "loginid": "elmoh2615",
         "companyname": "El Mohandess Print House CO",
@@ -6988,26 +7610,6 @@
                 "is_extra": "0"
             },
             {
-                "id": "376297",
-                "firstname": "Mr Ashraf",
-                "lastname": "Magdy",
-                "position": "Partner And Vice President",
-                "email": null,
-                "phone": null,
-                "mobile": null,
-                "is_extra": "0"
-            },
-            {
-                "id": "376298",
-                "firstname": "En Heba",
-                "lastname": "Magdy",
-                "position": "Partner And Vice President",
-                "email": null,
-                "phone": null,
-                "mobile": null,
-                "is_extra": "0"
-            },
-            {
                 "id": "376299",
                 "firstname": "Siham",
                 "lastname": "Shafik",
@@ -7036,10 +7638,31 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382290",
+                "firstname": "John",
+                "lastname": "Emad",
+                "position": "Senior Procurement",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382291",
+                "firstname": "Amgad",
+                "lastname": "Sabry",
+                "position": "Corrugated Section Head",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85983",
         "loginid": "almas2802",
         "companyname": "Al Masriya for Business Development",
@@ -7105,6 +7728,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85984",
         "loginid": "cairo3017",
         "companyname": "CairoPac",
@@ -7160,6 +7784,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85985",
         "loginid": "premi3451",
         "companyname": "Premium Machinery and Equipment",
@@ -7235,6 +7860,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85986",
         "loginid": "bonma3818",
         "companyname": "Bon Marche",
@@ -7300,6 +7926,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85987",
         "loginid": "mmcma4129",
         "companyname": "MMC Maggie Metal Corp.",
@@ -7575,6 +8202,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85988",
         "loginid": "alrwa4324",
         "companyname": "AKS",
@@ -7600,8 +8228,8 @@
             {
                 "id": "377949",
                 "firstname": "Haytham",
-                "lastname": "Rodwan",
-                "position": "Hommak Company Representative",
+                "lastname": "Radwan",
+                "position": "Hommak Sales Service Representative",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -7621,7 +8249,7 @@
                 "id": "377951",
                 "firstname": "Ahmed",
                 "lastname": "Baiomy",
-                "position": "Ceo Aks",
+                "position": "C E O",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -7631,7 +8259,7 @@
                 "id": "377952",
                 "firstname": "Amr",
                 "lastname": "Katilo",
-                "position": "Ceo Aks",
+                "position": "C E O",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -7641,7 +8269,7 @@
                 "id": "377953",
                 "firstname": "Mohamed",
                 "lastname": "Waly",
-                "position": "Cfo Aks",
+                "position": "C F O",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -7696,10 +8324,51 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382299",
+                "firstname": "Mohamed",
+                "lastname": "El Saaedy",
+                "position": "Technical Officer",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382300",
+                "firstname": "Cemil",
+                "lastname": "Gök",
+                "position": "Hommak Sales Director",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382301",
+                "firstname": "Yunus",
+                "lastname": "Emre Yetik",
+                "position": "Hommak Shareholder Sales Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382302",
+                "firstname": "Mazen",
+                "lastname": "Abo Awad",
+                "position": "Accountant",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85989",
         "loginid": "anasi4533",
         "companyname": "Anasia",
@@ -7801,10 +8470,21 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382344",
+                "firstname": "Samuel",
+                "lastname": "Hany",
+                "position": "Procurement Lead",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85990",
         "loginid": "promo4656",
         "companyname": "Promoting International Co.",
@@ -8020,6 +8700,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "85991",
         "loginid": "metpa4818",
         "companyname": "Metpack Egypt For Industrial Development",
@@ -8075,6 +8756,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86016",
         "loginid": "egypt0517",
         "companyname": "Egyptian Italian for Advanced Packaging-Europack",
@@ -8110,6 +8792,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86017",
         "loginid": "elara1633",
         "companyname": "El Araby Pack",
@@ -8175,6 +8858,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86023",
         "loginid": "egysp3858",
         "companyname": "EGY Sphere",
@@ -8226,10 +8910,41 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382053",
+                "firstname": "Yasmin",
+                "lastname": "Mokhtar",
+                "position": "Marketing",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382059",
+                "firstname": "Salah",
+                "lastname": "Ahmed",
+                "position": "Marketing Manger",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382060",
+                "firstname": "Khaled",
+                "lastname": "Mohammed",
+                "position": "Purchasing Manger",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86024",
         "loginid": "solut5642",
         "companyname": "solutions for engineering and electrical industries",
@@ -8315,6 +9030,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86030",
         "loginid": "egypt1122",
         "companyname": "Egyptian Engineering Co.(Morcos)",
@@ -8410,6 +9126,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86031",
         "loginid": "dunia3202",
         "companyname": "Dunia Plast",
@@ -8445,6 +9162,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86033",
         "loginid": "itllo3853",
         "companyname": "ITL Logistic Egypt",
@@ -8510,6 +9228,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86035",
         "loginid": "de-ma1718",
         "companyname": "VSort",
@@ -8625,6 +9344,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86048",
         "loginid": "kadyc1805",
         "companyname": "Kadyco",
@@ -8830,6 +9550,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86051",
         "loginid": "al-sh5649",
         "companyname": "Al-Shira'a Printing & Packaging",
@@ -8911,10 +9632,31 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382486",
+                "firstname": "Hadil",
+                "lastname": "Al Alimi",
+                "position": "Owner",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382487",
+                "firstname": "Nada",
+                "lastname": "Al Alimi",
+                "position": "Owner",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86052",
         "loginid": "sragr1652",
         "companyname": "UNIVERSAL - SRAG & RIZK",
@@ -8950,6 +9692,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86053",
         "loginid": "goods3035",
         "companyname": "Goodsealpackaging",
@@ -9055,6 +9798,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86054",
         "loginid": "sheha4119",
         "companyname": "Shehab Engineering",
@@ -9130,6 +9874,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86055",
         "loginid": "maste3011",
         "companyname": "Master PET",
@@ -9285,6 +10030,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86056",
         "loginid": "halab5619",
         "companyname": "Halab paper",
@@ -9310,6 +10056,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86057",
         "loginid": "robop0313",
         "companyname": "Robo pack",
@@ -9405,6 +10152,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86058",
         "loginid": "egspa0935",
         "companyname": "EGS Packing",
@@ -9470,6 +10218,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86059",
         "loginid": "expre1439",
         "companyname": "Express Plast",
@@ -9535,6 +10284,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86060",
         "loginid": "alfar2750",
         "companyname": "ALFARAJ For Engineering Industries",
@@ -9600,6 +10350,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86062",
         "loginid": "youni4037",
         "companyname": "Younis for Beekeping and Bee Products",
@@ -9695,6 +10446,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86064",
         "loginid": "egyca5420",
         "companyname": "EGY Can",
@@ -9790,6 +10542,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86250",
         "loginid": "feder2417",
         "companyname": "GERMAN PAVILION",
@@ -9851,10 +10604,21 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382384",
+                "firstname": "Mohamed",
+                "lastname": "Abubakr",
+                "position": "Driver For German Pavilion",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86251",
         "loginid": "deint2544",
         "companyname": "DEInternational Egypt Ltd.",
@@ -9880,6 +10644,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86252",
         "loginid": "bstel2709",
         "companyname": "BST Eltromat Istanbul Kontrol Sistemleri TIC.LTD.STI.",
@@ -9915,6 +10680,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86253",
         "loginid": "choco2843",
         "companyname": "CHOCOTECH GmbH",
@@ -9940,6 +10706,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86254",
         "loginid": "dingh0511",
         "companyname": "Döinghaus Cutting and More GmbH & Co. KG",
@@ -9965,6 +10732,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86255",
         "loginid": "hassi0603",
         "companyname": "Hassia-Redatron GmbH",
@@ -10030,6 +10798,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86256",
         "loginid": "kreye0734",
         "companyname": "Kreyenborg GmbH & Co. KG",
@@ -10065,6 +10834,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86257",
         "loginid": "lotha0833",
         "companyname": "Lothar A. Wolf Spezialmaschinen GmbH",
@@ -10090,6 +10860,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86258",
         "loginid": "mrten0922",
         "companyname": "Märtens Transportbänder GmbH",
@@ -10125,6 +10896,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86259",
         "loginid": "solli1034",
         "companyname": "Sollich KG",
@@ -10180,6 +10952,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86260",
         "loginid": "stela1140",
         "companyname": "Stela Laxhuber GmbH",
@@ -10215,6 +10988,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86261",
         "loginid": "winkl1240",
         "companyname": "Winkler und Dünnebier Süßwarenmaschinen GmbH",
@@ -10240,6 +11014,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86262",
         "loginid": "wipot1349",
         "companyname": "WIPOTEC GmbH",
@@ -10265,6 +11040,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86361",
         "loginid": "gargo1219",
         "companyname": "Gargour",
@@ -10720,6 +11496,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86363",
         "loginid": "alfae1754",
         "companyname": "Alfa Electronics",
@@ -10841,10 +11618,21 @@
                 "phone": null,
                 "mobile": null,
                 "is_extra": "0"
+            },
+            {
+                "id": "382087",
+                "firstname": "George",
+                "lastname": "REZK",
+                "position": "VP International Sales -WCS Coding",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
             }
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86381",
         "loginid": "scien4536",
         "companyname": "Scientific Engineering Office SEO",
@@ -11060,6 +11848,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86389",
         "loginid": "packm3252",
         "companyname": "Packmat Vertriebs- und Entwicklung GmbH",
@@ -11095,6 +11884,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86401",
         "loginid": "techn5144",
         "companyname": "Technoscient for Lab & Optical Products",
@@ -11160,6 +11950,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86402",
         "loginid": "magne0354",
         "companyname": "Magnets home",
@@ -11195,6 +11986,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86405",
         "loginid": "efe2631",
         "companyname": "EFE",
@@ -11420,6 +12212,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86407",
         "loginid": "aisam3255",
         "companyname": "AISA Machine",
@@ -11555,6 +12348,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86408",
         "loginid": "premi4201",
         "companyname": "YGT",
@@ -11620,6 +12414,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86409",
         "loginid": "techn3238",
         "companyname": "Massar Technical For Boilers",
@@ -11685,6 +12480,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86410",
         "loginid": "albur5249",
         "companyname": "Al Burouj",
@@ -11850,6 +12646,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86425",
         "loginid": "ssppr3649",
         "companyname": "SSP Private Limited",
@@ -11925,6 +12722,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86477",
         "loginid": "hertz1911",
         "companyname": "HERTZ KOMPRESSOREN EGYPT",
@@ -11980,6 +12778,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86529",
         "loginid": "beiji3022",
         "companyname": "Beijing Meckey Engineering Co.",
@@ -12055,6 +12854,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86530",
         "loginid": "qingd3658",
         "companyname": "Qingdao Glad Engineering Technology Co., Ltd.",
@@ -12090,20 +12890,7 @@
         ]
     },
     {
-        "id": "86542",
-        "loginid": "noha0358",
-        "companyname": "HAZEM",
-        "firstname": "",
-        "lastname": "",
-        "position": "",
-        "country": "Egypt",
-        "standnumber": "z1",
-        "spacetype": "Inside space only ( Inside Hall)",
-        "space": "9",
-        "email": "noha.elabd@ifpegypt.com",
-        "extrabadges": []
-    },
-    {
+        "mshowid": "pacprocessMEA2025",
         "id": "86547",
         "loginid": "merge5636",
         "companyname": "Merge Packaging",
@@ -12169,6 +12956,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86606",
         "loginid": "inter1029",
         "companyname": "International Business Corporation",
@@ -12183,6 +12971,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86623",
         "loginid": "apack3141",
         "companyname": "APACK AMBALAJ MAKINE SAN. VE TIC. LTD. STI.",
@@ -12218,6 +13007,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86624",
         "loginid": "marko3405",
         "companyname": "MARKOOMTECH MAKINA ITH. IHR. DIS TIC. LTD.STI.",
@@ -12232,6 +13022,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86625",
         "loginid": "karae3701",
         "companyname": "KARAERLER MAKINA",
@@ -12246,6 +13037,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86676",
         "loginid": "nilef2445",
         "companyname": "Nile For Trade and Technology- nile trade . co",
@@ -12253,7 +13045,7 @@
         "lastname": "Belal",
         "position": "CEO",
         "country": "Egypt",
-        "standnumber": "E3 \/ Hall 1",
+        "standnumber": "Hall 1 \/ E3",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "90",
         "email": "marketing@niletrade.com.eg",
@@ -12461,6 +13253,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86738",
         "loginid": "maddo1414",
         "companyname": "Maddox",
@@ -12468,13 +13261,14 @@
         "lastname": "Sobhy",
         "position": "",
         "country": "Egypt",
-        "standnumber": "D47 \/ Hall 1",
+        "standnumber": "Hall 1 \/ D47",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "12",
         "email": "madoxglobal8@gmail.com",
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86740",
         "loginid": "aquac2331",
         "companyname": "AQUACAP",
@@ -12482,7 +13276,7 @@
         "lastname": "Sameh",
         "position": "Export Manager",
         "country": "Egypt",
-        "standnumber": "B57 \/ Hall 1",
+        "standnumber": "Hall 1 \/ B57",
         "spacetype": "Fitted stand ( Walls, carpet, lighting, including furniture)",
         "space": "12",
         "email": "hadilsameh3@gmail.com",
@@ -12540,6 +13334,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86742",
         "loginid": "nama2803",
         "companyname": "NAMA",
@@ -12547,10 +13342,10 @@
         "lastname": "El Gohary",
         "position": "Executive Manager",
         "country": "Egypt",
-        "standnumber": "C31 \/ Hall 1",
+        "standnumber": "Hall 1 \/ C31",
         "spacetype": "Fitted stand ( Walls, carpet, lighting, including furniture)",
         "space": "18",
-        "email": "jala.salama@nama.me",
+        "email": "GAMAL.ELGOHARY@NAMA.ME ; Jala.salama@nama.me",
         "extrabadges": [
             {
                 "id": "379065",
@@ -12565,6 +13360,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86763",
         "loginid": "marco0544",
         "companyname": "MARCOPACK S.L.",
@@ -12610,6 +13406,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86764",
         "loginid": "maqui0902",
         "companyname": "MAQUINARIA CONSERVERA TOMÁS GUILLÉN, S.L",
@@ -12664,9 +13461,9 @@
             },
             {
                 "id": "379058",
-                "firstname": "Jose Antonio",
-                "lastname": "Carrillo",
-                "position": "Import manager",
+                "firstname": "Alberto",
+                "lastname": "Guillen Molina",
+                "position": "Ceo",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -12675,6 +13472,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86765",
         "loginid": "gemin1128",
         "companyname": "GEMINA PROCESOS ALIMENTARIOS SL",
@@ -12710,6 +13508,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86766",
         "loginid": "carug1326",
         "companyname": "CARUGIL SL",
@@ -12775,6 +13574,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86767",
         "loginid": "teyco1503",
         "companyname": "TEYCOMUR MAQUINARIA",
@@ -12791,7 +13591,37 @@
                 "id": "380182",
                 "firstname": "Pablo",
                 "lastname": "Medina",
-                "position": "Sales Director",
+                "position": "Sales Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382359",
+                "firstname": "Juan Antonio",
+                "lastname": "Bolarín",
+                "position": "Sales Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382360",
+                "firstname": "Abdel",
+                "lastname": "Dich",
+                "position": "Sales Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382361",
+                "firstname": "Luis",
+                "lastname": "Contreras",
+                "position": "Foreign Trade Technician",
                 "email": null,
                 "phone": null,
                 "mobile": null,
@@ -12800,6 +13630,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86840",
         "loginid": "jinda3223",
         "companyname": "JINDA TECHNOLOGY CO., LTD",
@@ -12835,45 +13666,7 @@
         ]
     },
     {
-        "id": "86903",
-        "loginid": "md-de3546",
-        "companyname": "MD - Deniz",
-        "firstname": "Deniz",
-        "lastname": "",
-        "position": "",
-        "country": "Germany",
-        "standnumber": "Hall 1 \/ K11",
-        "spacetype": "Inside space only ( Inside Hall)",
-        "space": "12",
-        "email": "KasapogluD@messe-duesseldorf.de",
-        "extrabadges": [
-            {
-                "id": "381427",
-                "firstname": "Gaelle",
-                "lastname": "Harb",
-                "position": "Ops",
-                "email": null,
-                "phone": null,
-                "mobile": null,
-                "is_extra": "0"
-            }
-        ]
-    },
-    {
-        "id": "86904",
-        "loginid": "md-ka3649",
-        "companyname": "MD - Katja",
-        "firstname": "Katja",
-        "lastname": "",
-        "position": "",
-        "country": "Germany",
-        "standnumber": "Hall 1 \/ K11",
-        "spacetype": "Fitted stand ( Walls, carpet, lighting, including furniture)",
-        "space": "12",
-        "email": "TuennissenK@messe-duesseldorf.de",
-        "extrabadges": []
-    },
-    {
+        "mshowid": "pacprocessMEA2025",
         "id": "86905",
         "loginid": "omcej4136",
         "companyname": "OMCE Jordan",
@@ -12909,6 +13702,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86906",
         "loginid": "natio4252",
         "companyname": "National Paper Bags & Boxes Factory",
@@ -12934,6 +13728,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86918",
         "loginid": "alfou5659",
         "companyname": "Al Fouad",
@@ -13029,6 +13824,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86924",
         "loginid": "gbs-g4440",
         "companyname": "Global Barcode Solution - GBS",
@@ -13036,7 +13832,7 @@
         "lastname": "Samir",
         "position": "Marketing Manager",
         "country": "Egypt",
-        "standnumber": "F61 \/ Hall 1",
+        "standnumber": "Hall 1 \/ F61",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "12",
         "email": "gbs@gbs-co.net ; mirna.samir@gbs-co.net ; mariam.samir@gbs-co.net",
@@ -13094,6 +13890,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86933",
         "loginid": "tetra2449",
         "companyname": "Tetra Pak",
@@ -13101,13 +13898,14 @@
         "lastname": "Shoman",
         "position": "Marketing Communications Manager",
         "country": "Egypt",
-        "standnumber": "C14 \/ Hall 1",
+        "standnumber": "Hall 1 \/ C14",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "75",
         "email": "Aya.Shoman@tetrapak.com",
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86965",
         "loginid": "targe2105",
         "companyname": "Target Egypt",
@@ -13115,7 +13913,7 @@
         "lastname": "Hassan",
         "position": "Marketing Specialist",
         "country": "Egypt",
-        "standnumber": "D14 \/ Hall 1",
+        "standnumber": "Hall 1 \/ D14",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "42",
         "email": "Kaz@targetegypt.co",
@@ -13173,6 +13971,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86967",
         "loginid": "engin4340",
         "companyname": "Engineering Export Council Of Egypt",
@@ -13238,6 +14037,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86968",
         "loginid": "eeca-4926",
         "companyname": "EECA - Egypt Expo & Convention Authority",
@@ -13252,6 +14052,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86971",
         "loginid": "chemi0942",
         "companyname": "Chemicals  and Fertilizers Export Council",
@@ -13259,7 +14060,7 @@
         "lastname": "",
         "position": "",
         "country": "Egypt",
-        "standnumber": "Hall 1 \/ A69",
+        "standnumber": "Hall 1 \/ A63",
         "spacetype": "Fitted stand ( Walls, carpet, lighting, including furniture)",
         "space": "9",
         "email": "nariman@cec-eg.com",
@@ -13317,6 +14118,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86972",
         "loginid": "chamb1104",
         "companyname": "Chamber of Chemical Industries",
@@ -13324,7 +14126,7 @@
         "lastname": "Ali",
         "position": "Head Sector Of Plastic Division",
         "country": "Egypt",
-        "standnumber": "Hall 1 \/ A71",
+        "standnumber": "Hall 1 \/ A65",
         "spacetype": "Fitted stand ( Walls, carpet, lighting, including furniture)",
         "space": "9",
         "email": "cciegy@yahoo.com",
@@ -13362,6 +14164,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86975",
         "loginid": "ecs-e3419",
         "companyname": "ECS - Egyptian Commercial Service",
@@ -13376,20 +14179,7 @@
         "extrabadges": []
     },
     {
-        "id": "86976",
-        "loginid": "print1955",
-        "companyname": "PRINT FOR PACK",
-        "firstname": "",
-        "lastname": "",
-        "position": "",
-        "country": "Egypt",
-        "standnumber": "B28 \/ Hall 1",
-        "spacetype": "Inside space only ( Inside Hall)",
-        "space": "36",
-        "email": "t.ali@p4p-eg.com",
-        "extrabadges": []
-    },
-    {
+        "mshowid": "pacprocessMEA2025",
         "id": "86981",
         "loginid": "frgom0410",
         "companyname": "FRIGOBLOCK SOGUTMA SISTEMLERI SANAYI VE TICARET A.S.",
@@ -13435,6 +14225,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "86984",
         "loginid": "fruit5535",
         "companyname": "Fruit Graders S.L.",
@@ -13470,6 +14261,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87013",
         "loginid": "print0744",
         "companyname": "Print for Pack - Akef",
@@ -13484,6 +14276,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87055",
         "loginid": "jinma0909",
         "companyname": "WUYUAN COUNTY JINMAI LIFT TECHNOLOGY CO., LTD.",
@@ -13529,6 +14322,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87057",
         "loginid": "unive5026",
         "companyname": "Univest (UFM)",
@@ -13536,13 +14330,14 @@
         "lastname": "El Masry",
         "position": "",
         "country": "Egypt",
-        "standnumber": "C3 \/ Hall 1",
+        "standnumber": "Hall 1 \/ C3",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "90",
         "email": "ola.elmasry@uig.com.eg",
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87075",
         "loginid": "editr4327",
         "companyname": "EDITRICE EDF TREND SRL",
@@ -13557,6 +14352,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87076",
         "loginid": "editr4456",
         "companyname": "EDITRICE EDF TREND SRL",
@@ -13571,6 +14367,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87077",
         "loginid": "packt4630",
         "companyname": "Packtech Magazine",
@@ -13585,6 +14382,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87078",
         "loginid": "packa4713",
         "companyname": "Packaging Labelling",
@@ -13599,6 +14397,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87079",
         "loginid": "fwafr4810",
         "companyname": "FW Africa | Sustainable Packaging MEA",
@@ -13624,6 +14423,7 @@
         ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87080",
         "loginid": "green2314",
         "companyname": "Greenship",
@@ -13631,13 +14431,75 @@
         "lastname": "Mahdy",
         "position": "",
         "country": "Egypt",
-        "standnumber": "D4 \/ Hall 1",
+        "standnumber": "Hall 1 \/ D4",
         "spacetype": "Fitted stand ( Walls, carpet, lighting, including furniture)",
         "space": "48",
         "email": "mollmohamed.draz1998@gmail.com",
-        "extrabadges": []
+        "extrabadges": [
+            {
+                "id": "382387",
+                "firstname": "Lucy",
+                "lastname": "",
+                "position": "Chairman",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382393",
+                "firstname": "Judi",
+                "lastname": "",
+                "position": "Sales Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382394",
+                "firstname": "Eliana",
+                "lastname": "",
+                "position": "Board Of Directors",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382395",
+                "firstname": "Mohamed",
+                "lastname": "Noseer",
+                "position": "Regional Director",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382396",
+                "firstname": "Mohamed",
+                "lastname": "Mahdy",
+                "position": "Sales",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382397",
+                "firstname": "Mohamed",
+                "lastname": "Refay",
+                "position": "Sales",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            }
+        ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87083",
         "loginid": "megap0922",
         "companyname": "Mega Pak",
@@ -13645,13 +14507,65 @@
         "lastname": "",
         "position": "",
         "country": "Egypt",
-        "standnumber": "E62 \/ Hall 1",
+        "standnumber": "Hall 1 \/ E62",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "12",
         "email": "Mohamed.abuelfotouh@megapack-eg.com",
-        "extrabadges": []
+        "extrabadges": [
+            {
+                "id": "382409",
+                "firstname": "Mohamed",
+                "lastname": "Abu Elfotouh",
+                "position": "Chairman And Ceo",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382410",
+                "firstname": "Yasser",
+                "lastname": "Ibrahim",
+                "position": "General Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382411",
+                "firstname": "Uliana",
+                "lastname": "Mohamed",
+                "position": "Marketing Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382412",
+                "firstname": "Ivanna",
+                "lastname": "Protsiuk",
+                "position": "Marketing Specialist",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382413",
+                "firstname": "Olena",
+                "lastname": "Voitko",
+                "position": "Marketing Specialist",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            }
+        ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87114",
         "loginid": "direc5334",
         "companyname": "Directory of Egyptian Industries & Companies",
@@ -13666,6 +14580,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87115",
         "loginid": "chamb0110",
         "companyname": "Chamber of Printing & Packaging Industries",
@@ -13677,9 +14592,91 @@
         "spacetype": "Fitted stand ( Walls, carpet, lighting, including furniture)",
         "space": "18",
         "email": "s.ibrahim@ecpp.org.eg",
-        "extrabadges": []
+        "extrabadges": [
+            {
+                "id": "382225",
+                "firstname": "Atef",
+                "lastname": "Abdalrahman",
+                "position": "Executive Director",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382226",
+                "firstname": "Samah",
+                "lastname": "Fawzy",
+                "position": "Planning Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382227",
+                "firstname": "Ahmed",
+                "lastname": "Zakaria",
+                "position": "Marketing Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382228",
+                "firstname": "Eman",
+                "lastname": "Youssry",
+                "position": "Partnership Officer",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382231",
+                "firstname": "Tamer",
+                "lastname": "Alhalawany",
+                "position": "It Manager",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382232",
+                "firstname": "Marwa",
+                "lastname": "Abdalaziz",
+                "position": "Graphic Designer",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382233",
+                "firstname": "Nader",
+                "lastname": "Zain",
+                "position": "Services Assistant",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            },
+            {
+                "id": "382234",
+                "firstname": "Helal",
+                "lastname": "rashid",
+                "position": "Services Assistant",
+                "email": null,
+                "phone": null,
+                "mobile": null,
+                "is_extra": "0"
+            }
+        ]
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87116",
         "loginid": "counc0354",
         "companyname": "Council of Printing & Packaging Industries",
@@ -13694,6 +14691,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87118",
         "loginid": "denzl4711",
         "companyname": "DENIZLI ÖZSTAR DIS TICARET LTD. STI.",
@@ -13708,6 +14706,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87142",
         "loginid": "splen0132",
         "companyname": "Splendor International Exhibition Co., Ltd.",
@@ -13715,13 +14714,14 @@
         "lastname": "",
         "position": "",
         "country": "China",
-        "standnumber": "Hall 1",
+        "standnumber": "",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "0",
         "email": "shonafeng@splendorexpo.com",
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87174",
         "loginid": "power5232",
         "companyname": "Power Belt",
@@ -13736,6 +14736,7 @@
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87175",
         "loginid": "compr5647",
         "companyname": "COMPRESSED AIR TECHNOLOGY ELHAGGAR MISR",
@@ -13743,13 +14744,14 @@
         "lastname": "Yousif",
         "position": "",
         "country": "Egypt",
-        "standnumber": "G62 \/ Hall 1",
+        "standnumber": "Hall 1 \/ G62",
         "spacetype": "Fitted stand ( Walls, carpet, lighting, including furniture)",
         "space": "9",
         "email": "a.yossef@elhaggarmisr.com",
         "extrabadges": []
     },
     {
+        "mshowid": "pacprocessMEA2025",
         "id": "87177",
         "loginid": "starm0331",
         "companyname": "Star Machine",
@@ -13757,10 +14759,40 @@
         "lastname": "Abd Elwahab",
         "position": "",
         "country": "Egypt",
-        "standnumber": "B39 \/ Hall 1",
+        "standnumber": "Hall 1 \/ B39",
         "spacetype": "Inside space only ( Inside Hall)",
         "space": "21",
         "email": "starmashyn@gmail.com",
+        "extrabadges": []
+    },
+    {
+        "mshowid": "pacprocessMEA2025",
+        "id": "87202",
+        "loginid": "md-ka0229",
+        "companyname": "MD - Katja",
+        "firstname": "",
+        "lastname": "",
+        "position": "",
+        "country": "Germany",
+        "standnumber": "Hall 1 \/ E3",
+        "spacetype": "Fitted stand ( Walls, carpet, lighting, including furniture)",
+        "space": "9",
+        "email": "TuennissenK@messe-duesseldorf.de",
+        "extrabadges": []
+    },
+    {
+        "mshowid": "pacprocessMEA2025",
+        "id": "87203",
+        "loginid": "konze0322",
+        "companyname": "Konzept",
+        "firstname": "",
+        "lastname": "",
+        "position": "",
+        "country": "Egypt",
+        "standnumber": "Hall 3 \/ F04",
+        "spacetype": "Fitted stand ( Walls, carpet, lighting, including furniture)",
+        "space": "9",
+        "email": "noha.elabd@ifpegypt.com",
         "extrabadges": []
     }
 ]
