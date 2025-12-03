@@ -8,19 +8,30 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, MatProgressBarModule, MatProgressSpinnerModule],
   template: `
-    <div *ngIf="loading" class="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black/40">
+    <div *ngIf="loading"
+         class="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black/40">
 
-      <!-- Top progress bar -->
-      <mat-progress-bar mode="indeterminate" color="accent" class="w-full mb-4"></mat-progress-bar>
+      <!-- TOP PROGRESS BAR (forced on top with z-index) -->
+      <mat-progress-bar mode="indeterminate"
+                        color="accent"
+                        class="w-full mb-4 overlay-top-bar"></mat-progress-bar>
 
       <!-- Circular spinner -->
-      <mat-progress-spinner mode="indeterminate" color="accent" diameter="50"></mat-progress-spinner>
-
-      <!-- <div class="mt-2 text-white font-semibold">Loading...</div> -->
+      <mat-progress-spinner mode="indeterminate"
+                            color="accent"
+                            diameter="50"></mat-progress-spinner>
     </div>
   `,
   styles: [`
     :host { display: block; }
+
+    /* Force the progress bar to always appear on top */
+    .overlay-top-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
   `]
 })
 export class OverlayLoaderComponent {

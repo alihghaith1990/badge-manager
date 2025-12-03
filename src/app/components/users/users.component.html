@@ -1,0 +1,68 @@
+<div class="users-container">
+
+    <div class="header">
+        <!-- <h1>Users Management</h1> -->
+
+        <button mat-flat-button (click)="openAdd()" class="!bg-primary">
+      <mat-icon>person_add</mat-icon>
+      Add User
+    </button>
+    </div>
+
+    <div class="overflow-auto rounded-lg shadow-lg bg-white max-h-[600px]">
+        <table mat-table [dataSource]="pagedUsers" class="w-full min-w-[700px]">
+
+            <!-- Username Column -->
+            <ng-container matColumnDef="username">
+                <th mat-header-cell *matHeaderCellDef sticky class="px-4 py-2 rounded-tl-lg text-white" style="background: linear-gradient(to right, #ed2126, #d32f2f);">
+                    Username
+                </th>
+                <td mat-cell *matCellDef="let u" class="px-4 py-2">
+                    <strong>{{ u.username }}</strong>
+                </td>
+            </ng-container>
+
+            <!-- Role Column -->
+            <ng-container matColumnDef="role">
+                <th mat-header-cell *matHeaderCellDef sticky class="px-4 py-2 text-white" style="background: linear-gradient(to right, #d32f2f, #b71c1c);">
+                    Role
+                </th>
+                <td mat-cell *matCellDef="let u" class="px-4 py-2">
+                    <span class="badge" [class.admin]="u.isAdmin">
+          {{ u.isAdmin ? 'Admin' : 'User' }}
+        </span>
+                </td>
+            </ng-container>
+
+            <!-- Actions Column -->
+            <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef sticky class="px-4 py-2 text-white" style="background: linear-gradient(to right, #b71c1c, #002D74);">
+                    Actions
+                </th>
+                <td mat-cell *matCellDef="let u" class="px-4 py-2">
+                    <div class="flex items-center gap-2">
+                        <!-- Change Password always available -->
+                        <button mat-icon-button (click)="changePassword(u)" matTooltip="Change Password" class="p-1 rounded-full hover:bg-secondary/20 transition">
+    <span class="material-symbols-outlined text-secondary">vpn_key</span>
+  </button>
+
+                        <!-- Delete only if NOT current logged-in user -->
+                        <button *ngIf="u.username !== auth.getCurrent()?.username" mat-icon-button (click)="deleteUser(u)" matTooltip="Delete User" class="p-1 rounded-full hover:bg-danger/20 transition">
+    <span class="material-symbols-outlined text-primary">delete</span>
+  </button>
+                    </div>
+                </td>
+            </ng-container>
+
+            <!-- Header and Rows -->
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="odd:bg-gray-50 even:bg-gray-100 hover:bg-primary/10 transition-colors">
+            </tr>
+
+        </table>
+    </div>
+
+    <mat-paginator [length]="allUsers.length" [pageSize]="pageSize" [pageSizeOptions]="[10, 25, 50, 100]" (page)="onPage($event)">
+    </mat-paginator>
+
+</div>

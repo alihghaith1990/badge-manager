@@ -1,44 +1,96 @@
 <h2 mat-dialog-title>Badges - {{ exhibitor?.companyname }}</h2>
-<mat-dialog-content class="space-y-4">
-    <div class="relative">
-        <app-overlay-loader [loading]="loader.isLoading()"></app-overlay-loader>
-        <div *ngIf="mode === 'list'">
-            <div class="flex justify-between items-center">
-                <div>Existing badges: {{ badges.length }}</div>
-                <div>
-                    <button mat-flat-button color="primary" (click)="mode='create'">+ Add</button>
-                </div>
+
+<mat-dialog-content class="space-y-4 relative">
+    <app-overlay-loader [loading]="loader.isLoading()"></app-overlay-loader>
+
+    <!-- List Mode -->
+    <div *ngIf="mode === 'list'">
+
+        <!-- Header -->
+        <div class="text-lg font-semibold mb-2">
+            Existing badges: <span class="text-primary">{{ filteredBadges.length }}</span>
+        </div>
+
+        <!-- Search + Add -->
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-2 mb-4">
+            <div class="relative w-full sm:w-64">
+                <input [(ngModel)]="searchTerm" type="text" placeholder="Search badges..." class="w-full px-4 py-2 pl-10 rounded-lg border border-gray-300 shadow-sm outline-none transition" />
+                <span class="absolute left-3 top-2.5 text-gray-400">
+                    <mat-icon class="text-gray-400 text-base">search</mat-icon>
+                </span>
             </div>
 
-            <mat-list>
-                <mat-list-item *ngFor="let b of badges">
-                    <div mat-line>{{ b.firstname }} {{ b.lastname }} <span class="text-sm text-gray-500">— {{ b.position }}</span></div>
-                    <div class="ml-auto flex gap-2">
-                        <button mat-icon-button (click)="print(b)"><mat-icon>print</mat-icon></button>
-                        <button mat-icon-button (click)="startEdit(b)"><mat-icon>edit</mat-icon></button>
-                        <button mat-icon-button color="warn" (click)="remove(b)"><mat-icon>delete</mat-icon></button>
+            <button mat-mini-fab aria-label="Add new Badge" (click)="mode='create'">
+                <mat-icon>add</mat-icon>
+            </button>
+        </div>
+
+        <!-- Badge list -->
+        <div class="space-y-4">
+            <div *ngFor="let b of filteredBadges" class="group flex items-center justify-between bg-white rounded-xl shadow-sm border border-gray-200 p-4
+                        hover:shadow-lg hover:scale-[1.01] transition-all relative">
+
+                <!-- Gradient Accent Bar -->
+                <div class="absolute left-0 top-0 h-full w-1 rounded-l-xl bg-primary-gradient"></div>
+
+                <!-- Info -->
+                <div class="pl-3">
+                    <div class="font-semibold text-gray-900 text-base">
+                        {{ b.firstname }} {{ b.lastname }}
                     </div>
-                </mat-list-item>
-            </mat-list>
-        </div>
-
-        <div *ngIf="mode === 'create'">
-            <form class="grid gap-2">
-                <mat-form-field><input matInput placeholder="First name" [(ngModel)]="form.firstname" name="fn" /></mat-form-field>
-                <mat-form-field><input matInput placeholder="Last name" [(ngModel)]="form.lastname" name="ln" /></mat-form-field>
-                <mat-form-field><input matInput placeholder="Position" [(ngModel)]="form.position" name="pos" /></mat-form-field>
-                <mat-form-field><input matInput placeholder="Email" [(ngModel)]="form.email" name="email" /></mat-form-field>
-                <mat-form-field><input matInput placeholder="Phone" [(ngModel)]="form.phone" name="phone" /></mat-form-field>
-
-                <div class="flex gap-2 justify-end mt-2">
-                    <button mat-flat-button color="primary" (click)="submit()">{{ editing ? 'Save' : 'Create' }}</button>
-                    <button mat-button (click)="cancel()">Cancel</button>
+                    <div class="text-sm text-gray-600">
+                        {{ b.position }}
+                    </div>
                 </div>
-            </form>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+                    <button mat-icon-button (click)="print(b)" class="hover:bg-gray-200 rounded-full transition-colors">
+                        <mat-icon class="text-secondary">print</mat-icon>
+                    </button>
+
+                    <button mat-icon-button (click)="startEdit(b)" class="hover:bg-gray-100 rounded-full transition-colors">
+                        <mat-icon class="text-primary">edit</mat-icon>
+                    </button>
+
+                    <button mat-icon-button (click)="remove(b)" class="hover:bg-red-100 rounded-full transition-colors">
+                        <mat-icon class="text-red-600">delete</mat-icon>
+                    </button>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <!-- Create / Edit Mode -->
+    <div *ngIf="mode === 'create'">
+        <!-- Back button when in create/edit mode -->
+        <div class="flex justify-end mb-2">
+            <button *ngIf="mode === 'create'" mat-stroked-button color="secondary" (click)="mode='list'">
+                Badges
+            </button>
+        </div>
+
+        <form class="grid gap-2">
+
+            <mat-form-field><input matInput placeholder="First name" [(ngModel)]="form.firstname" name="fn" /></mat-form-field>
+            <mat-form-field><input matInput placeholder="Last name" [(ngModel)]="form.lastname" name="ln" /></mat-form-field>
+            <mat-form-field><input matInput placeholder="Position" [(ngModel)]="form.position" name="pos" /></mat-form-field>
+            <mat-form-field><input matInput placeholder="Email" [(ngModel)]="form.email" name="email" /></mat-form-field>
+            <mat-form-field><input matInput placeholder="Phone" [(ngModel)]="form.phone" name="phone" /></mat-form-field>
+
+        </form>
     </div>
 </mat-dialog-content>
 
-<mat-dialog-actions align="end">
-    <button mat-button (click)="close()">Close</button>
+<mat-dialog-actions>
+    <div class="w-full flex align-center justify-{{mode === 'create' ? 'between' : 'end'}}">
+        <!-- Close button always available -->
+        <button mat-button (click)="close()">Close</button>
+
+        <!-- Save / Create button shows only in create/edit mode -->
+        <button *ngIf="mode === 'create'" mat-flat-button color="primary" (click)="submit()">
+            {{ editing ? 'Save' : 'Create' }}
+        </button>
+    </div>
+
 </mat-dialog-actions>

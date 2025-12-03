@@ -67,8 +67,8 @@ export class BadgePreviewService {
         const barcodeImg = this.createSharpBarcode(b.id);
 
         /** BADGE CONTAINER */
-        const bx = 15;  // FIXED left (requested)
-        const by = 40;  // FIXED top (requested)
+        const bx = 5;  // FIXED left (requested)
+        const by = 60;  // FIXED top (requested)
         const bw = 90;  // badge width
 
         /** helper to center text inside container */

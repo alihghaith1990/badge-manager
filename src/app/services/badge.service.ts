@@ -4,6 +4,7 @@ import { ExtraBadge, Exhibitor } from '../models/exhibitor.model';
 import { DataService } from './date.service';
 import { AuthService } from './auth.Service';
 import { LoaderService } from './loader.service';
+import { ToastService } from './toast.service';
 
 @Injectable({ providedIn: 'root' })
 export class BadgeService {
@@ -11,7 +12,8 @@ export class BadgeService {
         private data: DataService,
         private logs: LogService,
         private auth: AuthService,
-        private loader: LoaderService
+        private loader: LoaderService,
+        private toast: ToastService
     ) { }
 
     private getMax(space: number | null): number {
@@ -39,15 +41,20 @@ export class BadgeService {
     }
 
     async createBadge(exhibitorId: string, payload: Partial<ExtraBadge>): Promise<ExtraBadge> {
-        this.loader.show(); // start loader
+        this.loader.show();
         try {
             const ex = this.data.findById(exhibitorId);
-            if (!ex) throw new Error('Exhibitor not found');
+            if (!ex) {
+                // this.toast.error('Exhibitor not found');
+                throw new Error('Exhibitor not found');
+            }
 
             const current = ex.extrabadges ?? [];
             const max = this.getMaxForExhibitor(ex);
+
             if (current.length >= max) {
-                throw new Error(`Max badges reached (${max}) for this exhibitor.`);
+                // this.toast.error(`Maximum ${max} badges allowed for this exhibitor`);
+                throw new Error(`Max badges reached`);
             }
 
             // numeric incremental ID
@@ -85,9 +92,14 @@ export class BadgeService {
                 badgeId: badge.id
             });
 
+            this.toast.success('Badge added successfully');
             return badge;
+
+        } catch (err: any) {
+            this.toast.error(err.message || 'Error creating badge');
+            throw err;
         } finally {
-            this.loader.hide(); // stop loader
+            this.loader.hide();
         }
     }
 
@@ -95,11 +107,20 @@ export class BadgeService {
         this.loader.show();
         try {
             const ex = this.data.findById(exhibitorId);
-            if (!ex) throw new Error('Exhibitor not found');
+            if (!ex) {
+                // this.toast.error('Exhibitor not found');
+                throw new Error('Exhibitor not found');
+            }
+
             const idx = (ex.extrabadges ?? []).findIndex(b => b.id === badge.id);
-            if (idx === -1) throw new Error('Badge not found');
+            if (idx === -1) {
+                // this.toast.error('Badge not found');
+                throw new Error('Badge not found');
+            }
+
             ex.extrabadges![idx] = { ...badge };
             this.data.updateExhibitor(ex);
+
             this.logs.log({
                 timestamp: new Date().toISOString(),
                 user: this.auth.getCurrent()?.username ?? null,
@@ -107,6 +128,12 @@ export class BadgeService {
                 exhibitorId,
                 badgeId: badge.id
             });
+
+            this.toast.success('Badge updated successfully');
+
+        } catch (err: any) {
+            this.toast.error(err.message || 'Error updating badge');
+            throw err;
         } finally {
             this.loader.hide();
         }
@@ -116,9 +143,14 @@ export class BadgeService {
         this.loader.show();
         try {
             const ex = this.data.findById(exhibitorId);
-            if (!ex) throw new Error('Exhibitor not found');
+            if (!ex) {
+                // this.toast.error('Exhibitor not found');
+                throw new Error('Exhibitor not found');
+            }
+
             ex.extrabadges = (ex.extrabadges ?? []).filter(b => b.id !== badgeId);
             this.data.updateExhibitor(ex);
+
             this.logs.log({
                 timestamp: new Date().toISOString(),
                 user: this.auth.getCurrent()?.username ?? null,
@@ -126,6 +158,12 @@ export class BadgeService {
                 exhibitorId,
                 badgeId
             });
+
+            this.toast.success('Badge deleted successfully');
+
+        } catch (err: any) {
+            this.toast.error(err.message || 'Error deleting badge');
+            throw err;
         } finally {
             this.loader.hide();
         }

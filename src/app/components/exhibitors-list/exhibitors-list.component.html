@@ -1,68 +1,100 @@
 <div class="relative">
-    <div class="mb-4 flex gap-2 items-center">
-        <mat-form-field appearance="fill" class="w-72">
-            <mat-label>Select Show</mat-label>
-            <mat-select [value]="showFilter()" (selectionChange)="showFilter.set($event.value); applyFilter()">
-                <mat-option value="">All Shows</mat-option>
-                <mat-option *ngFor="let s of shows" [value]="s.id">{{ s.name }}</mat-option>
-            </mat-select>
-        </mat-form-field>
+  <!-- Filters / Search / Export -->
+  <div class="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+    <mat-form-field appearance="fill" class="w-72">
+      <mat-label>Select Show</mat-label>
+      <mat-select [value]="showFilter()" (selectionChange)="showFilter.set($event.value); applyFilter()">
+        <mat-option value="">All Shows</mat-option>
+        <mat-option *ngFor="let s of shows" [value]="s.id">{{ s.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
 
-        <mat-form-field class="flex-1">
-            <input matInput placeholder="Search company / stand" [(ngModel)]="q" (ngModelChange)="applyFilter()" />
-        </mat-form-field>
+    <mat-form-field class="flex-1">
+      <input matInput placeholder="Search company / stand" [(ngModel)]="q" (ngModelChange)="applyFilter()" />
+    </mat-form-field>
 
-        <button mat-flat-button color="accent" (click)="exportLogs()">Export Logs (Excel)</button>
-    </div>
+  </div>
 
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z2 w-full">
-        <ng-container matColumnDef="company">
-            <th mat-header-cell *matHeaderCellDef> Company </th>
-            <td mat-cell *matCellDef="let e"> {{ e.companyname }} </td>
-        </ng-container>
+  <!-- Table Container -->
+  <div class="overflow-auto rounded-lg shadow-lg bg-white max-h-[600px]">
+    <table mat-table [dataSource]="dataSource" class="w-full min-w-[700px]">
 
-        <ng-container matColumnDef="stand">
-            <th mat-header-cell *matHeaderCellDef> Stand </th>
-            <td mat-cell *matCellDef="let e"> {{ e.standnumber }} </td>
-        </ng-container>
+      <!-- Company Column -->
+      <ng-container matColumnDef="company">
+        <th mat-header-cell *matHeaderCellDef sticky class="px-4 py-2 rounded-tl-lg text-white"
+            style="background: linear-gradient(to right, #ed2126, #d32f2f);">
+          Company
+        </th>
+        <td mat-cell *matCellDef="let e" class="px-4 py-2"> {{ e.companyname }} </td>
+      </ng-container>
 
-        <ng-container matColumnDef="nbOfBadges">
-            <th mat-header-cell *matHeaderCellDef> Nb of Badges </th>
-            <td mat-cell *matCellDef="let e"> {{ e.max }} </td>
-        </ng-container>
+      <!-- Stand Column -->
+      <ng-container matColumnDef="stand">
+        <th mat-header-cell *matHeaderCellDef sticky class="px-4 py-2 text-white"
+            style="background: linear-gradient(to right, #d32f2f, #b71c1c);">
+          Stand
+        </th>
+        <td mat-cell *matCellDef="let e" class="px-4 py-2"> {{ e.standnumber }} </td>
+      </ng-container>
 
-        <ng-container matColumnDef="available">
-            <th mat-header-cell *matHeaderCellDef> Available </th>
-            <td mat-cell *matCellDef="let e"> {{ available(e) }} </td>
-        </ng-container>
+      <!-- Nb of Badges Column -->
+      <ng-container matColumnDef="nbOfBadges">
+        <th mat-header-cell *matHeaderCellDef sticky class="px-4 py-2 text-white"
+            style="background: linear-gradient(to right, #b71c1c, #002D74);">
+          Nb of Badges
+        </th>
+        <td mat-cell *matCellDef="let e" class="px-4 py-2"> {{ e.max }} </td>
+      </ng-container>
 
-        <ng-container matColumnDef="filled">
-            <th mat-header-cell *matHeaderCellDef> Filled </th>
-            <td mat-cell *matCellDef="let e"> {{ (e.extrabadges || []).length }} </td>
-        </ng-container>
+      <!-- Filled Column -->
+      <ng-container matColumnDef="filled">
+        <th mat-header-cell *matHeaderCellDef sticky class="px-4 py-2 text-white"
+            style="background: linear-gradient(to right, #002D74, #003a99);">
+          Filled
+        </th>
+        <td mat-cell *matCellDef="let e" class="px-4 py-2"> {{ (e.extrabadges || []).length }} </td>
+      </ng-container>
 
-        <ng-container matColumnDef="actions">
-            <th mat-header-cell *matHeaderCellDef> Actions </th>
-            <td mat-cell *matCellDef="let e">
-                <div class="flex items-center justify-between gap-1">
-                    <button mat-icon-button matTooltip="View / Edit Badges" (click)="openList(e)">
-                    <span class="material-symbols-outlined">edit_square</span>
-                </button>
-                    <button mat-mini-button color="primary" (click)="openAdd(e)" matTooltip="Add Extra Badge">
-                    <span class="material-symbols-outlined">qr_code_2_add</span>
-                </button>
-                    <button mat-mini-button color="accent" (click)="printAll(e)" matTooltip="Print All">
-                    <span class="material-symbols-outlined">print</span>
-                </button>
-                </div>
-            </td>
-        </ng-container>
+      <!-- Available Column -->
+      <ng-container matColumnDef="available">
+        <th mat-header-cell *matHeaderCellDef sticky class="px-4 py-2 text-white"
+            style="background: linear-gradient(to right, #003a99, #002D74);">
+          Available
+        </th>
+        <td mat-cell *matCellDef="let e" class="px-4 py-2"> {{ available(e) }} </td>
+      </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="columns"></tr>
-        <tr mat-row *matRowDef="let row; columns: columns;"></tr>
+      <!-- Actions Column -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef sticky class="px-4 py-2 text-white"
+            style="background: linear-gradient(to right, #002D74, #001f4d);">
+          Actions
+        </th>
+        <td mat-cell *matCellDef="let e" class="px-4 py-2">
+          <div class="flex items-center gap-2">
+            <button mat-icon-button matTooltip="View / Edit Badges" (click)="openList(e)" class="hover:bg-gray-100 rounded-full p-1">
+              <span class="material-symbols-outlined text-gray-700">edit_square</span>
+            </button>
+            <button mat-mini-button color="primary" (click)="openAdd(e)" matTooltip="Add Extra Badge">
+              <span class="material-symbols-outlined">qr_code_2_add</span>
+            </button>
+            <button mat-mini-button color="accent" (click)="printAll(e)" matTooltip="Print Badges">
+              <span class="material-symbols-outlined">print</span>
+            </button>
+          </div>
+        </td>
+      </ng-container>
+
+      <!-- Header and Rows -->
+      <tr mat-header-row *matHeaderRowDef="columns"></tr>
+      <tr mat-row *matRowDef="let row; columns: columns;"
+          class="odd:bg-gray-50 even:bg-gray-100 hover:bg-primary/10 transition-colors">
+      </tr>
     </table>
+  </div>
 
-    <mat-paginator [pageSize]="25" [pageSizeOptions]="[5,10,25,50]" showFirstLastButtons></mat-paginator>
+  <!-- Paginator -->
+  <mat-paginator [pageSize]="25" [pageSizeOptions]="[5,10,25,50]" showFirstLastButtons class="mt-2"></mat-paginator>
 
-    <p class="mt-2 text-sm">Showing {{dataSource.data.length}} rows</p>
+  <p class="mt-2 text-sm text-gray-700">Showing {{dataSource.data.length}} rows</p>
 </div>

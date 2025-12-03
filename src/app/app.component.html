@@ -1,20 +1,75 @@
-<mat-toolbar color="primary" class="sticky top-0 z-20">
-    <span class="font-bold">Badges Manager</span>
-    <span class="flex-1"></span>
-    <ng-container *ngIf="auth.currentUser$ | async as u; else loggedOut">
-        <span class="mr-4">Hi, {{ u.username }}</span>
-        <button mat-button (click)="auth.logout()">Logout</button>
-    </ng-container>
-    <ng-template #loggedOut>
-        <a mat-button routerLink="/login">Login</a>
-    </ng-template>
+<!-- Toasts -->
+<app-toast-container></app-toast-container>
+
+<!-- TOP TOOLBAR -->
+<mat-toolbar class="!bg-primary-gradient sticky top-0 z-20 px-6 flex items-center justify-between">
+
+    <!-- LEFT: Logos + App Title + Menu Links -->
+    <div class="flex items-center space-x-4">
+        <!-- Logos -->
+        <img src="fa-logo.png" alt="FA Logo" class="h-32 w-32 object-contain" />
+        <img src="pp-logo.png" alt="PP Logo" class="h-32 w-32 object-contain" />
+
+        <!-- App Title -->
+        <span class="font-medium text-white text-xl ml-4">Badges Manager</span>
+
+        <ng-container *ngIf="auth.currentUser$ | async as u">
+            <!-- Separator -->
+            <span *ngIf="u.isAdmin" class="border-l border-white h-6 ml-4"></span>
+
+            <!-- Menu Links -->
+            <nav class="flex space-x-4 ml-4 text-sm">
+                <a *ngIf="currentRoute !== '/'" [routerLink]="'/'" class="hover:underline transition text-white font-medium">
+          Exhibitors
+        </a>
+
+                <a *ngIf="u.isAdmin && currentRoute !== '/admin/users'" [routerLink]="'/admin/users'" class="hover:underline transition text-white font-medium">
+          Users
+        </a>
+
+                <a *ngIf="u.isAdmin" (click)="exportLogs()" class="hover:underline transition text-white font-medium">
+          Export Logs
+        </a>
+            </nav>
+        </ng-container>
+    </div>
+
+    <!-- RIGHT: User Info / Login -->
+    <div class="flex items-center space-x-4 text-sm">
+        <ng-container *ngIf="auth.currentUser$ | async as u; else loggedOut">
+            <span class="hidden sm:inline text-white">
+        Hi, <span class="font-semibold">{{ u.username }}</span>
+            </span>
+            <button mat-button (click)="logout()" class="!text-white font-medium hover:underline transition">
+        Logout
+      </button>
+        </ng-container>
+
+        <ng-template #loggedOut>
+            <a *ngIf="currentRoute !== '/login'" routerLink="/login" class="!text-white font-medium hover:underline transition">
+        Login
+      </a>
+        </ng-template>
+    </div>
+
 </mat-toolbar>
 
 <main class="p-4">
-    <ng-container *ngIf="auth.isLoggedIn(); else showLogin">
-        <app-exhibitors-list></app-exhibitors-list>
-    </ng-container>
-    <ng-template #showLogin>
-        <app-login></app-login>
-    </ng-template>
+
+    <!-- GLOBAL BANNER -->
+    <!-- <div class="main-banner relative w-full h-48 mb-4 overflow-hidden">
+        <img
+            *ngFor="let banner of banners; let i = index"
+            [src]="banner"
+            alt="Show Banner"
+            class="absolute top-0 left-0 w-full h-full object-contain
+                   transition-opacity duration-1000"
+            [class.opacity-0]="i !== currentIndex"
+            [class.opacity-100]="i === currentIndex"
+        />
+    </div> -->
+
+    <!-- MAIN ROUTING -->
+    <router-outlet></router-outlet>
+
 </main>

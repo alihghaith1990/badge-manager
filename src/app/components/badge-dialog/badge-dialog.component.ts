@@ -29,6 +29,20 @@ export class BadgeDialogComponent {
   editing: ExtraBadge | null = null;
   form: Partial<ExtraBadge> = {};
   isLoading: boolean = false;
+  searchTerm: string = '';
+
+  get filteredBadges() {
+    if (!this.searchTerm) return this.badges;
+    const t = this.searchTerm.toLowerCase();
+
+    return this.badges.filter(b =>
+      (b.firstname?.toLowerCase().includes(t)) ||
+      (b.lastname?.toLowerCase().includes(t)) ||
+      (b.position?.toLowerCase().includes(t)) ||
+      (b.email?.toLowerCase().includes(t)) ||
+      (b.phone?.toLowerCase().includes(t))
+    );
+  }
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, signal, ViewChild, AfterViewInit, HostListener, ElementRef } from '@angular/core';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -15,6 +15,7 @@ import { LogService } from '../../services/log.service';
 import { AuthService } from '../../services/auth.Service';
 import { BadgeDialogComponent } from '../badge-dialog/badge-dialog.component';
 import { BadgePreviewService } from '../../services/badge-preview.service';
+
 @Component({
   selector: 'app-exhibitors-list',
   standalone: true,
@@ -39,7 +40,7 @@ export class ExhibitorsListComponent implements AfterViewInit {
   filtered = signal<Exhibitor[]>([]);
   q = '';
   showFilter = signal<string>(''); // selected show
-  columns = ['company', 'stand', 'nbOfBadges', 'available', 'filled', 'actions'];
+  columns = ['company', 'stand', 'nbOfBadges', 'filled', 'available', 'actions'];
 
   readonly shows = [
     { id: 'foodafricacairo2025', name: 'Food Africa Cairo 2025' },
@@ -47,6 +48,8 @@ export class ExhibitorsListComponent implements AfterViewInit {
   ];
 
   dataSource = new MatTableDataSource<Exhibitor>([]);
+  private barcodeBuffer: string = '';
+  private barcodeTimer: any;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -127,7 +130,27 @@ export class ExhibitorsListComponent implements AfterViewInit {
     });
   }
 
-  exportLogs() {
-    this.logService.exportExcel();
+  // Barcode scanner input handling
+  @HostListener('document:keydown', ['$event'])
+  handleBarcode(event: KeyboardEvent) {
+    if (this.barcodeTimer) clearTimeout(this.barcodeTimer);
+
+    if (event.key === 'Enter') {
+      // On Enter, treat buffer as full barcode
+      if (this.barcodeBuffer) {
+        this.q = this.barcodeBuffer;
+        this.applyFilter();
+        this.barcodeBuffer = '';
+      }
+      return;
+    }
+
+    // accumulate keys
+    if (event.key.length === 1) { // letters/numbers
+      this.barcodeBuffer += event.key;
+    }
+
+    // reset buffer after short delay (scans are fast)
+    this.barcodeTimer = setTimeout(() => this.barcodeBuffer = '', 50);
   }
 }

@@ -6,3 +6,11 @@
 .mat-table {
     width: 100%;
 }
+
+.custom-dialog .mat-mdc-dialog-container {
+    width: 100% !important;
+    min-width: 28rem !important;
+    max-width: 30rem !important;
+    padding: 2rem !important;
+    border-radius: 1rem !important;
+}
