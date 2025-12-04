@@ -1,3 +1,6 @@
+<!-- Loader -->
+<app-overlay-loader [loading]="loader.isLoading()"></app-overlay-loader>
+
 <!-- Toasts -->
 <app-toast-container></app-toast-container>
 
@@ -27,7 +30,7 @@
           Users
         </a>
 
-                <a *ngIf="u.isAdmin" (click)="exportLogs()" class="hover:underline transition text-white font-medium">
+                <a *ngIf="u.isAdmin" (click)="exportLogs()" class="cursor-pointer hover:underline transition text-white font-medium">
           Export Logs
         </a>
             </nav>

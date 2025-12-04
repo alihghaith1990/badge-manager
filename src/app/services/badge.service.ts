@@ -50,12 +50,12 @@ export class BadgeService {
             }
 
             const current = ex.extrabadges ?? [];
-            const max = this.getMaxForExhibitor(ex);
+            // const max = this.getMaxForExhibitor(ex);
 
-            if (current.length >= max) {
-                // this.toast.error(`Maximum ${max} badges allowed for this exhibitor`);
-                throw new Error(`Max badges reached`);
-            }
+            // if (current.length >= max) {
+            //     // this.toast.error(`Maximum ${max} badges allowed for this exhibitor`);
+            //     throw new Error(`Max badges reached`);
+            // }
 
             // numeric incremental ID
             let maxId = 0;

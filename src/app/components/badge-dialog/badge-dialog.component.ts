@@ -99,7 +99,14 @@ export class BadgeDialogComponent {
   }
 
   async print(b: ExtraBadge) {
-    await this.preview.printBadge(this.exhibitor!, b);
+    this.loader.show();   // start loader
+
+    try {
+      await this.preview.printBadge(this.exhibitor!, b);
+    }
+    finally {
+      this.loader.hide(); // stop loader
+    }
   }
 
   close() {

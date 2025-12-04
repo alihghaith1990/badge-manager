@@ -72,15 +72,24 @@
         </th>
         <td mat-cell *matCellDef="let e" class="px-4 py-2">
           <div class="flex items-center gap-2">
-            <button mat-icon-button matTooltip="View / Edit Badges" (click)="openList(e)" class="hover:bg-gray-100 rounded-full p-1">
-              <span class="material-symbols-outlined text-gray-700">edit_square</span>
-            </button>
-            <button mat-mini-button color="primary" (click)="openAdd(e)" matTooltip="Add Extra Badge">
-              <span class="material-symbols-outlined">qr_code_2_add</span>
-            </button>
-            <button mat-mini-button color="accent" (click)="printAll(e)" matTooltip="Print Badges">
-              <span class="material-symbols-outlined">print</span>
-            </button>
+<!-- View / Edit Badges -->
+<button (click)="openList(e)" matTooltip="View / Edit Badges"
+        class="bg-secondary hover:bg-secondary/80 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-colors duration-200">
+  <span class="material-symbols-outlined text-lg">edit_square</span>
+</button>
+
+<!-- Add Extra Badge -->
+<button (click)="openAdd(e)" matTooltip="Add Extra Badge"
+        class="bg-orange-500 hover:bg-orange-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-colors duration-200">
+  <span class="material-symbols-outlined text-lg">qr_code_2_add</span>
+</button>
+
+<!-- Print Badges -->
+<button (click)="printAll(e)" matTooltip="Print Badges"
+        class="bg-primary hover:bg-primary/80 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md transition-colors duration-200">
+  <span class="material-symbols-outlined text-lg">print</span>
+</button>
+
           </div>
         </td>
       </ng-container>

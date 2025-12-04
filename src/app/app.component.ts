@@ -7,6 +7,8 @@ import { ToastContainerComponent } from "./components/toast-container/toast-cont
 import { NavigationEnd, Router, RouterModule, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
 import { LogService } from './services/log.service';
+import { OverlayLoaderComponent } from "./components/overlay-loader/overlay-loader.component";
+import { LoaderService } from './services/loader.service';
 
 @Component({
   selector: 'app-root',
@@ -17,8 +19,9 @@ import { LogService } from './services/log.service';
     MatButtonModule,
     RouterModule,
     ToastContainerComponent,
-    RouterOutlet
-  ],
+    RouterOutlet,
+    OverlayLoaderComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -29,7 +32,7 @@ export class AppComponent {
 
   currentRoute = '';
 
-  constructor(public auth: AuthService, private logService: LogService, private router: Router) {
+  constructor(public loader: LoaderService, public auth: AuthService, private logService: LogService, private router: Router) {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: any) => {

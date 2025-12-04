@@ -57,7 +57,7 @@ export class AuthService {
             // seed admin
             const admin: User = {
                 username: 'admin',
-                passwordHash: this.hash('admin123'),
+                passwordHash: this.hash('Kg1P772d'),
                 isAdmin: true
             };
             this.users = [admin];

@@ -14,6 +14,7 @@ export class BadgePreviewService {
         private auth: AuthService
     ) { }
 
+    /** Determine max badges based on exhibitor space */
     getMaxForExhibitor(ex: Exhibitor): number {
         const space = ex.space ? parseInt(ex.space as any, 10) : null;
         if (!space) return 0;
@@ -29,12 +30,12 @@ export class BadgePreviewService {
         }
     }
 
-    /** QR */
+    /** QR Code generator */
     private async createQR(data: any): Promise<string> {
         return QRCode.toDataURL(JSON.stringify(data), { width: 300 });
     }
 
-    /** SHARP BARCODE (3x resolution → no blur) */
+    /** Sharp barcode generator */
     private createSharpBarcode(id: string): string {
         const canvas = document.createElement('canvas');
         canvas.width = 600;
@@ -51,8 +52,28 @@ export class BadgePreviewService {
         return canvas.toDataURL('image/png');
     }
 
-    /** Draw badge on A4 at fixed X=20, Y=36, but inner items centered */
+    /** Embed font into jsPDF */
+    private async loadFont(pdf: jsPDF, fontUrl: string, fontName: string = 'DejaVuSans') {
+        const res = await fetch(fontUrl);
+        const fontData = await res.arrayBuffer();
+        pdf.addFileToVFS(`${fontName}.ttf`, this.arrayBufferToBase64(fontData));
+        pdf.addFont(`${fontName}.ttf`, fontName, 'normal');
+    }
+
+    private arrayBufferToBase64(buffer: ArrayBuffer): string {
+        let binary = '';
+        const bytes = new Uint8Array(buffer);
+        const len = bytes.byteLength;
+        for (let i = 0; i < len; i++) {
+            binary += String.fromCharCode(bytes[i]);
+        }
+        return window.btoa(binary);
+    }
+
+    /** Draw badge on A4 at fixed X=5, Y=60, with inner items centered, Arabic + English ready */
     private async drawBadgeOnA4(pdf: jsPDF, ex: Exhibitor, b: ExtraBadge) {
+        // Load the Arabic-supporting font once per PDF
+        await this.loadFont(pdf, 'DejaVuSans.ttf', 'DejaVuSans');
 
         const qrData = {
             id: b.id,
@@ -67,35 +88,33 @@ export class BadgePreviewService {
         const barcodeImg = this.createSharpBarcode(b.id);
 
         /** BADGE CONTAINER */
-        const bx = 5;  // FIXED left (requested)
-        const by = 60;  // FIXED top (requested)
-        const bw = 90;  // badge width
+        const bx = 5;  // left
+        const by = 60; // top
+        const bw = 90; // badge width
+        let y = by;
 
-        /** helper to center text inside container */
+        /** Helper: center text inside badge container */
         const centerInside = (text: string, fontSize: number) => {
             pdf.setFontSize(fontSize);
             const w = pdf.getTextWidth(text);
             return bx + (bw - w) / 2;
         };
 
-        let y = by;
-
-        /** QR CODE (centered inside container) */
+        /** QR CODE (centered) */
         const qrSize = 32;
         pdf.addImage(qrImg, "PNG", bx + (bw - qrSize) / 2, y, qrSize, qrSize);
         y += qrSize + 6;
 
-        /** NAME */
-        pdf.setFont("helvetica", "bold");
+        /** FULL NAME */
+        pdf.setFont("DejaVuSans", "normal");
         pdf.setFontSize(16);
         const fullname = `${b.firstname} ${b.lastname}`;
         pdf.text(fullname, centerInside(fullname, 16), y);
         y += 8;
 
         /** POSITION */
-        pdf.setFont("helvetica", "normal");
-        pdf.setFontSize(12);
         if (b.position) {
+            pdf.setFontSize(12);
             pdf.text(b.position, centerInside(b.position, 12), y);
             y += 7;
         }
@@ -112,27 +131,22 @@ export class BadgePreviewService {
             y += 10;
         }
 
-        /** BARCODE (sharp & centered) */
+        /** BARCODE */
         const bwImg = 45;
         const bhImg = 10;
         pdf.addImage(barcodeImg, "PNG", bx + (bw - bwImg) / 2, y, bwImg, bhImg);
-        /** Barcode number below */
-        y += bhImg + 3; // move a bit below the barcode
-        pdf.setFont("helvetica", "normal");
+        y += bhImg + 3;
+
+        /** BARCODE NUMBER (centered) */
         pdf.setFontSize(10);
         pdf.text(b.id, bx + bw / 2, y, { align: "center" });
     }
 
-    /** PRINT ONE BADGE */
+
+    /** Print a single badge */
     async printBadge(ex: Exhibitor, b: ExtraBadge) {
-        const pdf = new jsPDF({
-            orientation: "portrait",
-            unit: "mm",
-            format: "a4"
-        });
-
+        const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
         await this.drawBadgeOnA4(pdf, ex, b);
-
         pdf.save(`${ex.companyname.replace(/\s+/g, '_')}_${b.id}.pdf`);
 
         this.logs.log({
@@ -144,16 +158,12 @@ export class BadgePreviewService {
         });
     }
 
-    /** PRINT ALL BADGES (1 per A4 page) */
+    /** Print all badges for an exhibitor */
     async printAllBadgesForExhibitor(ex: Exhibitor) {
         const badges = ex.extrabadges ?? [];
         if (!badges.length) return alert('No badges to print');
 
-        const pdf = new jsPDF({
-            orientation: "portrait",
-            unit: "mm",
-            format: "a4"
-        });
+        const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
 
         for (let i = 0; i < badges.length; i++) {
             if (i > 0) pdf.addPage("a4", "portrait");

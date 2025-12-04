@@ -15,6 +15,7 @@ import { LogService } from '../../services/log.service';
 import { AuthService } from '../../services/auth.Service';
 import { BadgeDialogComponent } from '../badge-dialog/badge-dialog.component';
 import { BadgePreviewService } from '../../services/badge-preview.service';
+import { LoaderService } from '../../services/loader.service';
 
 @Component({
   selector: 'app-exhibitors-list',
@@ -35,7 +36,6 @@ import { BadgePreviewService } from '../../services/badge-preview.service';
   styleUrls: ['./exhibitors-list.component.scss']
 })
 export class ExhibitorsListComponent implements AfterViewInit {
-  isListLoading: boolean = false;
   exhibitors = signal<Exhibitor[]>([]);
   filtered = signal<Exhibitor[]>([]);
   q = '';
@@ -58,24 +58,28 @@ export class ExhibitorsListComponent implements AfterViewInit {
     private dialog: MatDialog,
     private preview: BadgePreviewService,
     private logService: LogService,
+    public loader: LoaderService,
     public auth: AuthService
   ) { }
 
   ngOnInit(): void {
-    this.isListLoading = true;
+    this.loader.show();
+
     this.data.exhibitors$.subscribe(list => {
       const enriched = list.map(e => ({
         ...e,
         max: this.preview.getMaxForExhibitor(e)
       }));
+
       this.exhibitors.set(enriched);
       this.applyFilter();
+
+      this.loader.hide();
     });
   }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
-    this.isListLoading = false;
   }
 
   applyFilter() {
@@ -121,13 +125,21 @@ export class ExhibitorsListComponent implements AfterViewInit {
   }
 
   async printAll(e: Exhibitor) {
-    await this.preview.printAllBadgesForExhibitor(e);
-    this.logService.log({
-      timestamp: new Date().toISOString(),
-      user: this.auth.getCurrent()?.username ?? null,
-      action: 'PRINT_ALL',
-      exhibitorId: e.id
-    });
+    this.loader.show(); // show global loader
+
+    try {
+      await this.preview.printAllBadgesForExhibitor(e);
+
+      this.logService.log({
+        timestamp: new Date().toISOString(),
+        user: this.auth.getCurrent()?.username ?? null,
+        action: 'PRINT_ALL',
+        exhibitorId: e.id
+      });
+
+    } finally {
+      this.loader.hide(); // hide loader even if PDF fails
+    }
   }
 
   // Barcode scanner input handling
